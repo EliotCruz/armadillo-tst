@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=armadillo
+POSTGRES_USER=doFxAKbnzaAygopoTPSDOFQKkzOCAmjk
+POSTGRES_PASSWORD=HiOZxk3mMxMq3SZauSScZDhW7VgpaLCRivZyBvyDOetlXy1cMshTYm1VOkE6etRS
