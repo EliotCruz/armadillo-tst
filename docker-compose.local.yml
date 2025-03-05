@@ -10,16 +10,18 @@ services:
       dockerfile: ./compose/local/django/Dockerfile
     image: armadillo_local_django
     container_name: armadillo_local_django
+    restart: always
     depends_on:
       - postgres
     volumes:
-      - .:/app:z
+      - ./:/app
     env_file:
       - ./.envs/.local/.django
       - ./.envs/.local/.postgres
     ports:
       - '8000:8000'
-    command: /start
+    command: python manage.py runserver 0.0.0.0:8000
+
 
   postgres:
     build:
